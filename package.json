@@ -50,7 +50,7 @@
         "commands": [
             {
                 "command": "git.commit.view.hide",
-                "title": "隐藏commit视图",
+                "title": "Git: 隐藏commit视图",
                 "category": "Git",
                 "icon": "$(close)"
             },
@@ -60,7 +60,7 @@
             },
             {
                 "command": "git.commit.compare.view.hide",
-                "title": "隐藏commit比较视图",
+                "title": "Git: 隐藏commit比较视图",
                 "category": "Git",
                 "icon": "$(close)"
             },
@@ -70,85 +70,85 @@
             },
             {
                 "command": "git.viewLineHistory",
-                "title": "Git: 查看行历史记录"
+                "title": "Git: 查看该行相关的提交历史"
             },
             {
                 "command": "git.viewHistory",
-                "title": "Git: 显示日志 (git log)",
+                "title": "Git: 查看提交历史",
                 "icon": "$(history)"
             },
             {
                 "command": "git.viewFileHistory",
-                "title": "Git: 显示文件日志",
+                "title": "Git: 查看当前文件/文件夹的提交历史",
                 "icon": "$(history)"
             },
             {
                 "command": "git.commit.ViewChangeLog",
-                "title": "显示更改日志"
+                "title": "Git: 显示变更日志"
             },
             {
                 "command": "git.commit.cherryPick",
-                "title": "摘取到当前分支"
+                "title": "Git: 摘取到当前分支"
             },
             {
                 "command": "git.commit.createBranch",
-                "title": "以本次版本为基础创建分支"
+                "title": "Git: 以本次版本为基础创建分支"
             },
             {
                 "command": "git.commit.FileEntry.ViewFileContents",
-                "title": "显示文件内容"
+                "title": "Git: 显示文件内容"
             },
             {
                 "command": "git.commit.FileEntry.CompareAgainstWorkspace",
-                "title": "与本地副本比较"
+                "title": "Git: 与本地副本比较"
             },
             {
                 "command": "git.commit.FileEntry.CompareAgainstPrevious",
-                "title": "与以往版本比较"
+                "title": "Git: 与以往版本比较"
             },
             {
                 "command": "git.commit.FileEntry.selectForComparison",
-                "title": "选择以比较"
+                "title": "Git: 选择以比较"
             },
             {
                 "command": "git.commit.FileEntry.compare",
-                "title": "与以前选择的提交进行比较"
+                "title": "Git: 与以前选中的提交进行比较"
             },
             {
                 "command": "git.commit.compare.file.compare",
-                "title": "比较"
+                "title": "Git: 比较"
             },
             {
                 "command": "git.commit.compare.selectForComparison",
-                "title": "选择以比较"
+                "title": "Git: 选择以比较"
             },
             {
                 "command": "git.commit.compare",
-                "title": "与以前选择的提交进行比较"
+                "title": "Git: 与以前选中的提交进行比较"
             },
             {
                 "command": "git.commit.compare.view.showFilesOnly",
-                "title": "仅显示文件"
+                "title": "Git: 仅显示文件"
             },
             {
                 "command": "git.commit.compare.view.showFolderView",
-                "title": "显示文件夹视图"
+                "title": "Git: 显示文件夹视图"
             },
             {
                 "command": "git.commit.merge",
-                "title": "合并本次提交"
+                "title": "Git: 合并本次提交"
             },
             {
                 "command": "git.commit.rebase",
-                "title": "变基本次提交"
+                "title": "Git: 变基本次提交"
             },
             {
                 "command": "git.commit.view.showFilesOnly",
-                "title": "仅显示文件"
+                "title": "Git: 仅显示文件"
             },
             {
                 "command": "git.commit.view.showFolderView",
-                "title": "显示文件夹视图"
+                "title": "Git: 显示文件夹视图"
             }
         ],
         "keybindings": [
@@ -339,7 +339,7 @@
                     "type": "boolean",
                     "default": false,
                     "scope": "resource",
-                    "description": "在打开Git日志时包括远程分支"
+                    "description": "打开Git日志时包括远程分支"
                 },
                 "gitHistory.showFileHistorySplit": {
                     "type": "boolean",
@@ -375,7 +375,7 @@
                     "type": "integer",
                     "default": 60,
                     "scope": "window",
-                    "description": "用户头像缓存时间 (0 = cache disabled)"
+                    "description": "用户头像缓存时间 (0 = 不启用缓存)"
                 },
                 "gitHistory.sideBySide": {
                     "type": "boolean",
@@ -405,7 +405,7 @@
                         "Show the 'Git: View History' action in the 'More Actions...' menu on the title of SCM Providers"
                     ],
                     "default": "Inline",
-                    "description": "指定 'Git: “查看历史记录”操作出现在SCM提供程序的标题上。"
+                    "description": "指定 'Git: “查看提交历史”操作出现在SCM提供程序的标题上。"
                 }
             }
         }

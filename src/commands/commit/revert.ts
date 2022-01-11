@@ -5,7 +5,7 @@ import { BaseCommitCommand } from '../baseCommitCommand';
 export class RevertCommand extends BaseCommitCommand {
     constructor(commit: CommitDetails, private handler: IGitRevertCommandHandler) {
         super(commit);
-        this.setTitle(`$(x) 还原此次提交 (${commit.logEntry.hash.short})`);
+        this.setTitle(`$(x) 还原此版本 (${commit.logEntry.hash.short}) 作出的修改`);
         this.setCommand('git.commit.revert');
         this.setCommandArguments([commit]);
     }

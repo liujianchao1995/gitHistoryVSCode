@@ -23,7 +23,7 @@ export function Author(props: AuthorProps) {
                 role="button"
                 style={{ fontSize: '130%', marginRight: '0.2em' }}
                 className="btnx hint--right hint--rounded hint--bounce"
-                aria-label="以此提交者筛选提交历史"
+                aria-label="以该提交者为关键字 查找提交历史"
             >
                 <a role="button" onClick={selectAuthor}>
                     <GoEye></GoEye>

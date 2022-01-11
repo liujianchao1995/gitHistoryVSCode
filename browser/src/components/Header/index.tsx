@@ -121,7 +121,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     className={'textInput'}
                     type="text"
                     value={this.state.searchText}
-                    placeholder="输入关键字回车以筛选"
+                    placeholder="输入关键字 按回车以筛选"
                     onKeyDown={this.handleKeyDown}
                     onChange={this.handleSearchChange}
                 />
