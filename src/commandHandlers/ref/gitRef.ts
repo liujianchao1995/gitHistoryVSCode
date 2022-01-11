@@ -15,8 +15,8 @@ export class GitRefCommandHandler implements IGitRefCommandHandler {
 
     @command('git.commit.removeTag', IGitRefCommandHandler)
     public async removeTagFromCommit(branch: BranchDetails, tagName?: string) {
-        const msg = 'Tag to remove';
-        const description = 'Enter tag name to remove';
+        const msg = '删除标签';
+        const description = '输入要删除的标签名';
 
         tagName =
             typeof tagName !== 'string' || tagName.trim().length === 0
@@ -37,8 +37,8 @@ export class GitRefCommandHandler implements IGitRefCommandHandler {
 
     @command('git.commit.removeBranch', IGitRefCommandHandler)
     public async removeBranchFromCommit(branch: BranchDetails, branchName?: string) {
-        const msg = 'Branch to remove';
-        const description = 'Enter branch name to remove';
+        const msg = '删除分支';
+        const description = '输入要删除的分支名';
 
         branchName =
             typeof branchName !== 'string' || branchName.trim().length === 0
@@ -59,8 +59,8 @@ export class GitRefCommandHandler implements IGitRefCommandHandler {
 
     @command('git.commit.removeRemote', IGitRefCommandHandler)
     public async removeRemoteFromCommit(branch: BranchDetails, remoteName?: string) {
-        const msg = 'Remote branch to remove';
-        const description = 'Enter remote branch to remove';
+        const msg = '删除远程分支';
+        const description = '输入要删除的远程分支名';
 
         remoteName =
             typeof remoteName !== 'string' || remoteName.trim().length === 0

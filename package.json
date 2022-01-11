@@ -50,41 +50,41 @@
         "commands": [
             {
                 "command": "git.commit.view.hide",
-                "title": "Hide Commit View Explorer",
+                "title": "隐藏commit视图",
                 "category": "Git",
                 "icon": "$(close)"
             },
             {
                 "command": "git.commit.view.show",
-                "title": "Git: Show Commit View Explorer"
+                "title": "Git: 显示commit视图"
             },
             {
                 "command": "git.commit.compare.view.hide",
-                "title": "Hide Commit Comparison View Explorer",
+                "title": "隐藏commit比较视图",
                 "category": "Git",
                 "icon": "$(close)"
             },
             {
                 "command": "git.commit.compare.view.show",
-                "title": "Git: Show Commit Comparison View Explorer"
+                "title": "Git: 显示commit比较视图"
             },
             {
                 "command": "git.viewLineHistory",
-                "title": "Git: View Line History"
+                "title": "Git: 查看行历史记录"
             },
             {
                 "command": "git.viewHistory",
-                "title": "Git: View History (git log)",
+                "title": "Git: 显示日志 (git log)",
                 "icon": "$(history)"
             },
             {
                 "command": "git.viewFileHistory",
-                "title": "Git: View File History",
+                "title": "Git: 显示文件日志",
                 "icon": "$(history)"
             },
             {
                 "command": "git.commit.ViewChangeLog",
-                "title": "View Change log"
+                "title": "显示更改日志"
             },
             {
                 "command": "git.commit.cherryPick",
@@ -92,63 +92,63 @@
             },
             {
                 "command": "git.commit.createBranch",
-                "title": "Create a branch from this commit"
+                "title": "以本次版本为基础创建分支"
             },
             {
                 "command": "git.commit.FileEntry.ViewFileContents",
-                "title": "View File Contents"
+                "title": "显示文件内容"
             },
             {
                 "command": "git.commit.FileEntry.CompareAgainstWorkspace",
-                "title": "Compare against workspace version"
+                "title": "与本地副本比较"
             },
             {
                 "command": "git.commit.FileEntry.CompareAgainstPrevious",
-                "title": "Compare against previous version"
+                "title": "与以往版本比较"
             },
             {
                 "command": "git.commit.FileEntry.selectForComparison",
-                "title": "Select for comparison"
+                "title": "选择以比较"
             },
             {
                 "command": "git.commit.FileEntry.compare",
-                "title": "Compare against previously selected Commit"
+                "title": "与以前选择的提交进行比较"
             },
             {
                 "command": "git.commit.compare.file.compare",
-                "title": "Compare"
+                "title": "比较"
             },
             {
                 "command": "git.commit.compare.selectForComparison",
-                "title": "Select for comparison"
+                "title": "选择以比较"
             },
             {
                 "command": "git.commit.compare",
-                "title": "Compare against previously selected Commit"
+                "title": "与以前选择的提交进行比较"
             },
             {
                 "command": "git.commit.compare.view.showFilesOnly",
-                "title": "Show files only"
+                "title": "仅显示文件"
             },
             {
                 "command": "git.commit.compare.view.showFolderView",
-                "title": "Show folder view"
+                "title": "显示文件夹视图"
             },
             {
                 "command": "git.commit.merge",
-                "title": "Merge with this commit"
+                "title": "合并本次提交"
             },
             {
                 "command": "git.commit.rebase",
-                "title": "Rebase onto this commit"
+                "title": "变基本次提交"
             },
             {
                 "command": "git.commit.view.showFilesOnly",
-                "title": "Show files only"
+                "title": "仅显示文件"
             },
             {
                 "command": "git.commit.view.showFolderView",
-                "title": "Show folder view"
+                "title": "显示文件夹视图"
             }
         ],
         "keybindings": [
@@ -333,55 +333,55 @@
                     "type": "boolean",
                     "default": false,
                     "scope": "window",
-                    "description": "Always prompt with repository picker when running Git History"
+                    "description": "运行Git日志时始终使用提示"
                 },
                 "gitHistory.includeRemoteBranches": {
                     "type": "boolean",
                     "default": false,
                     "scope": "resource",
-                    "description": "Include remote branches when opening Git History"
+                    "description": "在打开Git日志时包括远程分支"
                 },
                 "gitHistory.showFileHistorySplit": {
                     "type": "boolean",
                     "default": true,
                     "scope": "window",
-                    "description": "Split show file history when file is active."
+                    "description": "当文件处于活动状态时，拆分显示文件的历史记录。"
                 },
                 "gitHistory.hideCommitViewExplorer": {
                     "type": "boolean",
                     "default": false,
                     "scope": "window",
-                    "description": "Whether to display the commit explorer view"
+                    "description": "是否显示提交视图"
                 },
                 "gitHistory.showEditorTitleMenuBarIcons": {
                     "type": "boolean",
                     "default": true,
                     "scope": "window",
-                    "description": "Whether to display a button in the editor title menu bar"
+                    "description": "是否在编辑器标题菜单栏中显示按钮"
                 },
                 "gitHistory.editorTitleButtonOpenRepo": {
                     "type": "boolean",
                     "default": false,
                     "scope": "window",
-                    "description": "Prefer to open repository (instead of file) when pressing the editor title button"
+                    "description": "按下编辑器标题按钮时，更应该打开存储库（而不是文件）"
                 },
                 "gitHistory.pageSize": {
                     "type": "number",
                     "default": 100,
                     "scope": "window",
-                    "description": "Default number of items to be displayed in Git History Viewer"
+                    "description": "在日志视图中显示的默认条数"
                 },
                 "gitHistory.avatarCacheExpiration": {
                     "type": "integer",
                     "default": 60,
                     "scope": "window",
-                    "description": "Avatar image cache expiration (0 = cache disabled)"
+                    "description": "用户头像缓存时间 (0 = cache disabled)"
                 },
                 "gitHistory.sideBySide": {
                     "type": "boolean",
                     "default": false,
                     "scope": "application",
-                    "description": "Show commit details in side-by-side view"
+                    "description": "在并列视图中显示提交详细信息"
                 },
                 "gitHistory.logLevel": {
                     "type": "string",
@@ -392,7 +392,7 @@
                         "Debug"
                     ],
                     "scope": "window",
-                    "description": "Output log information"
+                    "description": "输出日志信息"
                 },
                 "gitHistory.sourceCodeProviderIntegrationLocation": {
                     "type": "string",
@@ -405,7 +405,7 @@
                         "Show the 'Git: View History' action in the 'More Actions...' menu on the title of SCM Providers"
                     ],
                     "default": "Inline",
-                    "description": "Specifies where the 'Git: View History' action appears on the title of SCM Providers."
+                    "description": "指定 'Git: “查看历史记录”操作出现在SCM提供程序的标题上。"
                 }
             }
         }
@@ -428,7 +428,7 @@
             "eslint"
         ],
         "browser/**/*.{ts,tsx}": [
-            "eslint"
+            "eslint --fix"
         ]
     },
     "devDependencies": {

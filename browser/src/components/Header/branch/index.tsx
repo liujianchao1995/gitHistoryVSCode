@@ -36,7 +36,7 @@ export class Branch extends React.Component<BranchProps, BranchState> {
         if (nextProps.settings.branchSelection === BranchSelection.Detached) {
             title = `[${nextProps.settings.branchName.substr(0, 7)}]`;
         } else if (nextProps.settings.branchSelection === BranchSelection.All) {
-            title = 'All branches';
+            title = '所有分支';
         }
 
         return { title };
@@ -135,7 +135,7 @@ export class Branch extends React.Component<BranchProps, BranchState> {
                         ref={x => (this.searchField = x)}
                         type="text"
                         className="textInput"
-                        placeholder="Search.."
+                        placeholder="搜索.."
                         id="myInput"
                         value={this.state.searchText}
                         onChange={this.handleSearchChange}

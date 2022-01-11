@@ -128,7 +128,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                 <span
                                     onClick={e => copyText(e, this.props.logEntry.hash.full)}
                                     className="btnx hash clipboard hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Copy hash to clipboard"
+                                    aria-label="复制哈希值到剪贴板"
                                 >
                                     {this.props.logEntry.hash.short}&nbsp;
                                     <GoClippy></GoClippy>
@@ -137,7 +137,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Soft reset to this commit"
+                                    aria-label="软重置本次提交的所有变更(git reset --soft)"
                                 >
                                     <a
                                         role="button"
@@ -165,7 +165,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Create a new tag"
+                                    aria-label="在此处新增标签"
                                 >
                                     <a
                                         role="button"
@@ -173,13 +173,13 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, 'newtag'),
                                         )}
                                     >
-                                        <GoPlus></GoPlus>Tag
+                                        <GoPlus></GoPlus>标签(Tag)
                                     </a>
                                 </span>
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Create a new branch from here"
+                                    aria-label="在此处新建分支"
                                 >
                                     <a
                                         role="button"
@@ -187,13 +187,13 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, 'newbranch'),
                                         )}
                                     >
-                                        <GoPlus></GoPlus>Branch
+                                        <GoPlus></GoPlus>分支(Branch)
                                     </a>
                                 </span>
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Cherry pick, Compare, etc"
+                                    aria-label="Cherry pick、Compare、etc"
                                 >
                                     <a
                                         role="button"
@@ -201,7 +201,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, ''),
                                         )}
                                     >
-                                        <GoGitCommit></GoGitCommit>More
+                                        <GoGitCommit></GoGitCommit>更多操作
                                     </a>
                                 </span>
                             </div>

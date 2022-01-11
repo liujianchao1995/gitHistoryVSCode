@@ -121,20 +121,20 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     className={'textInput'}
                     type="text"
                     value={this.state.searchText}
-                    placeholder="Enter term and press enter to search"
+                    placeholder="输入关键词并按Enter键进行筛选"
                     onKeyDown={this.handleKeyDown}
                     onChange={this.handleSearchChange}
                 />
                 <Button bsSize="small" disabled={this.state.isLoading} onClick={this.onSearch}>
-                    {this.state.isLoading ? 'Loading...' : 'Search'}
+                    {this.state.isLoading ? '加载中...' : '筛选'}
                 </Button>
                 <Branch></Branch>
                 <Author></Author>
                 <Button bsSize="small" disabled={this.state.isLoading} onClick={this.onClear}>
-                    Clear
+                    重置筛选
                 </Button>
                 <Button bsSize="small" disabled={this.state.isLoading} onClick={this.onRefresh}>
-                    Refresh
+                    刷新
                 </Button>
                 <span className={'links'}>{this.remoteLink()}</span>
             </header>

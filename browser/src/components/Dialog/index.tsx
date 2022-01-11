@@ -42,7 +42,7 @@ export default class Dialog extends React.Component<DialogProps, DialogState> {
             type: DialogType.Info,
             value: '',
             title: '',
-            placeholder: 'Please enter a value here',
+            placeholder: '请输入',
             description: '',
             input: false,
             buttons: DialogButtons.OkCancel,
@@ -85,13 +85,13 @@ export default class Dialog extends React.Component<DialogProps, DialogState> {
                         bsStyle="primary"
                         onClick={this.clickHander.bind(this)}
                     >
-                        Ok
+                        确定
                     </Button>,
                 ];
             case DialogButtons.OkCancel:
                 return [
                     <Button key="btnCancel" name="cancel" onClick={this.clickHander.bind(this)}>
-                        Cancel
+                        取消
                     </Button>,
                     <Button
                         key="btnOk"
@@ -102,7 +102,7 @@ export default class Dialog extends React.Component<DialogProps, DialogState> {
                         bsStyle="primary"
                         onClick={this.clickHander.bind(this)}
                     >
-                        Ok
+                        确定
                     </Button>,
                 ];
         }

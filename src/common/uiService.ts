@@ -6,8 +6,8 @@ import { IServiceContainer } from '../ioc/types';
 import { BranchSelection } from '../types';
 import { CommitDetails, FileCommitDetails, ICommand, IUiService } from './types';
 
-const allBranches = '$(git-branch) All branches';
-const currentBranch = '$(git-branch) Current branch';
+const allBranches = '$(git-branch) 所有分支';
+const currentBranch = '$(git-branch) 当前分支';
 
 @injectable()
 export class UiService implements IUiService {

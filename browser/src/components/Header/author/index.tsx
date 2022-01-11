@@ -77,7 +77,7 @@ export class Author extends React.Component<AuthorProps, AuthorState> {
 
         const title =
             !this.props.settings.authorFilter || this.props.settings.authorFilter === ''
-                ? 'All Authors'
+                ? '所有提交者'
                 : this.props.settings.authorFilter;
 
         return (
@@ -90,14 +90,14 @@ export class Author extends React.Component<AuthorProps, AuthorState> {
                 onClick={e => this.onClick(e)}
                 id="authorSelection"
             >
-                <MenuItem eventKey="[ALL]">All Authors</MenuItem>
+                <MenuItem eventKey="[ALL]">所有提交者</MenuItem>
                 <MenuItem divider />
                 <MenuItem header>
                     <input
                         ref={x => (this.searchField = x)}
                         type="text"
                         className="textInput"
-                        placeholder="Search.."
+                        placeholder="搜索.."
                         id="myInput"
                         value={this.state.searchText}
                         onChange={this.handleSearchChange}

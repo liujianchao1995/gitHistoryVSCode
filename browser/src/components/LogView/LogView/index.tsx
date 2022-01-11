@@ -75,33 +75,31 @@ class LogView extends React.Component<LogViewProps, LogViewState> {
     public onRefAction = (logEntry: LogEntry, ref: Ref, name: string) => {
         switch (name) {
             case 'removeTag':
-                this.dialog.showConfirm(
-                    `Remove tag ${ref.name}?`,
-                    `Do you really want to remove the tag ${ref.name}?`,
-                    DialogType.Warning,
-                    { logEntry, ref, name },
-                );
+                this.dialog.showConfirm(`删除标签 ${ref.name}?`, `确定要删除 ${ref.name} 标签吗?`, DialogType.Warning, {
+                    logEntry,
+                    ref,
+                    name,
+                });
                 break;
             case 'removeBranch':
-                this.dialog.showConfirm(
-                    `Remove branch ${ref.name}?`,
-                    `Do you really want to remove the branch ${ref.name}?`,
-                    DialogType.Warning,
-                    { logEntry, ref, name },
-                );
+                this.dialog.showConfirm(`删除分支 ${ref.name}?`, `真的要删除 ${ref.name} 分支吗?`, DialogType.Warning, {
+                    logEntry,
+                    ref,
+                    name,
+                });
                 break;
             case 'checkoutBranch':
                 this.dialog.showConfirm(
-                    `Checkout to branch ${ref.name}?`,
-                    `Do you want to checkout branch ${ref.name}?`,
+                    `切换到分支 ${ref.name}?`,
+                    `确定要切换到 ${ref.name} 分支吗?`,
                     DialogType.Info,
                     { logEntry, ref, name },
                 );
                 break;
             case 'removeRemote':
                 this.dialog.showConfirm(
-                    `Remove remote branch ${ref.name}?`,
-                    `Do you really want to remove the remote branch ${ref.name}?`,
+                    `删除远程分支 ${ref.name}?`,
+                    `真的要删除远程分支 ${ref.name} 吗?`,
                     DialogType.Warning,
                     { logEntry, ref, name },
                 );
@@ -113,38 +111,38 @@ class LogView extends React.Component<LogViewProps, LogViewState> {
         switch (name) {
             case 'newtag':
                 this.dialog.showInput(
-                    `Create a new tag on ${entry.hash.short}`,
+                    `在 ${entry.hash.short} 创建一个新标签`,
                     `<strong>${entry.subject}</strong><br />${entry.author.name} on ${entry.author.date.toISOString()}`,
-                    'Enter tag here',
+                    '在这里输入标签名',
                     DialogType.Info,
                     { entry, name },
                 );
                 break;
             case 'newbranch':
                 this.dialog.showInput(
-                    `Create a branch from ${entry.hash.short}`,
+                    `在 ${entry.hash.short} 创建一个新分支`,
                     `<strong>${entry.subject}</strong><br />${entry.author.name} on ${entry.author.date.toISOString()}`,
-                    'Enter branch name here',
+                    '在此处输入分支名称',
                     DialogType.Info,
                     { entry, name },
                 );
                 break;
             case 'reset_soft':
                 this.dialog.showConfirm(
-                    `Soft reset to ${entry.hash.short}?`,
+                    `软重置到 ${entry.hash.short}?(git reset --soft)`,
                     `<p><strong>${entry.subject}</strong><br />${
                         entry.author.name
-                    } on ${entry.author.date.toISOString()}</p><small>All affected files will be merged and kept in local workspace</small>`,
+                    } on ${entry.author.date.toISOString()}</p><small>所有受影响的文件将合并并保存在本地工作区中</small>`,
                     DialogType.Info,
                     { entry, name },
                 );
                 break;
             case 'reset_hard':
                 this.dialog.showConfirm(
-                    `Hard reset commit to ${entry.hash.short}?`,
+                    `硬重置到 ${entry.hash.short}?(git reset --hard)`,
                     `<p><strong>${entry.subject}</strong><br />${
                         entry.author.name
-                    } on ${entry.author.date.toISOString()}</p><div>This is IRREVERSIBLE TO YOUR CURRENT WORKING SET. UNCOMMITTED LOCAL FILES WILL BE REMOVED</div>`,
+                    } on ${entry.author.date.toISOString()}</p><div>此操作不可逆，未提交的本地文件将被删除！</div>`,
                     DialogType.Warning,
                     { entry, name },
                 );
