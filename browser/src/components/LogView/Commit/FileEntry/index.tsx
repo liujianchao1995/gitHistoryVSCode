@@ -101,7 +101,7 @@ export class FileEntry extends React.Component<FileEntryProps> {
                     <span
                         role="button"
                         className="btnx hint--left hint--rounded hint--bounce"
-                        aria-label="将文件与当前工作区进行比较"
+                        aria-label="与本地副本进行比较"
                     >
                         <a
                             role="button"
@@ -113,7 +113,7 @@ export class FileEntry extends React.Component<FileEntryProps> {
                     <span
                         role="button"
                         className="btnx hint--left hint--rounded hint--bounce"
-                        aria-label="将文件与以前的提交进行比较"
+                        aria-label="与上一个版本进行比较"
                     >
                         <a
                             role="button"
