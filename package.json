@@ -88,7 +88,7 @@
             },
             {
                 "command": "git.commit.cherryPick",
-                "title": "Cherrypick into current branch"
+                "title": "摘取到当前分支"
             },
             {
                 "command": "git.commit.createBranch",
@@ -417,7 +417,7 @@
         "test-extension": "node ./dist/test/runTest.js",
         "webpack": "webpack -p --progress --colors",
         "webpack-dev": "webpack --progress --colors --watch",
-        "lint": "eslint 'src/**/*.ts' && eslint 'browser/src/**/*.ts*'",
+        "lint": "eslint \"src/**/*.ts\" && eslint \"browser/src/**/*.ts*\"",
         "fix": "eslint --fix \"src/**/*.ts\" && eslint --fix \"browser/src/**/*.ts*\"",
         "precommit": "lint-staged",
         "storybook": "start-storybook",

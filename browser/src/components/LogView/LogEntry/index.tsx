@@ -137,7 +137,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="软重置本次提交的所有变更(git reset --soft)"
+                                    aria-label="软重置本次提交的所有变更"
                                 >
                                     <a
                                         role="button"
@@ -145,13 +145,13 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, 'reset_soft'),
                                         )}
                                     >
-                                        <GoFileSymlinkFile></GoFileSymlinkFile>Soft
+                                        <GoFileSymlinkFile></GoFileSymlinkFile>软重置
                                     </a>
                                 </span>
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Hard reset to this commit"
+                                    aria-label="硬重置本次提交的所有变更"
                                 >
                                     <a
                                         role="button"
@@ -159,7 +159,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, 'reset_hard'),
                                         )}
                                     >
-                                        <GoFileSymlinkDirectory></GoFileSymlinkDirectory>Hard
+                                        <GoFileSymlinkDirectory></GoFileSymlinkDirectory>硬重置
                                     </a>
                                 </span>
                                 <span
@@ -173,7 +173,7 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, 'newtag'),
                                         )}
                                     >
-                                        <GoPlus></GoPlus>标签(Tag)
+                                        <GoPlus></GoPlus>标签
                                     </a>
                                 </span>
                                 <span
@@ -187,13 +187,13 @@ class LogEntryView extends React.Component<ResultListProps, {}> {
                                             this.props.onAction(this.props.logEntry, 'newbranch'),
                                         )}
                                     >
-                                        <GoPlus></GoPlus>分支(Branch)
+                                        <GoPlus></GoPlus>分支
                                     </a>
                                 </span>
                                 <span
                                     role="button"
                                     className="btnx hint--top-left hint--rounded hint--bounce"
-                                    aria-label="Cherry pick、Compare、etc"
+                                    aria-label="摘取(Cherry pick)、比较(Compare)、etc"
                                 >
                                     <a
                                         role="button"

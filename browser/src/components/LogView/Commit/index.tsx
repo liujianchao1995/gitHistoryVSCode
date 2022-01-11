@@ -104,7 +104,7 @@ class Commit extends React.Component<CommitProps, CommitState> {
                                     copyText(e, this.props.selectedEntry.subject + '\n' + this.props.selectedEntry.body)
                                 }
                                 className="btnx clipboard hint--right hint--rounded hint--bounce"
-                                aria-label="Copy commit text"
+                                aria-label="复制日志文本"
                             >
                                 <GoClippy></GoClippy>
                             </span>
@@ -121,14 +121,14 @@ class Commit extends React.Component<CommitProps, CommitState> {
                             className={'textInput'}
                             type="text"
                             value={this.state.searchText}
-                            placeholder="Find file"
+                            placeholder="查找文件"
                             onKeyDown={this.handleKeyDown}
                             onChange={this.handleSearchChange}
                         />
                         <button
                             type="button"
                             className="btn btn-sm btn-default hint--bottom-left hint--rounded hint--bounce"
-                            aria-label="Close the detail view"
+                            aria-label="关闭详情窗口"
                             onClick={this.onClose}
                         >
                             <GoX />

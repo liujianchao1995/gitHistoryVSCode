@@ -16,14 +16,14 @@ export default function Footer(props: FooterProps) {
                 onClick={() => props.goBack()}
             >
                 <i className="octicon octicon-chevron-left"></i>
-                <span>Previous</span>
+                <span>上一页</span>
             </Button>
             <Button
                 bsStyle="primary"
                 className={props.canGoForward ? 'navbar-link' : 'navbar-link disabled'}
                 onClick={() => props.goForward()}
             >
-                <span>Next</span>
+                <span>下一页</span>
                 <i className="octicon octicon-chevron-right"></i>
             </Button>
         </div>

@@ -92,7 +92,7 @@ export class FileEntry extends React.Component<FileEntryProps> {
                     <span
                         role="button"
                         className="btnx hint--left hint--rounded hint--bounce"
-                        aria-label="View file content"
+                        aria-label="查看文件内容"
                     >
                         <a role="button" onClick={() => this.props.onAction(this.props.committedFile, 'view')}>
                             <GoEye></GoEye> View
@@ -101,7 +101,7 @@ export class FileEntry extends React.Component<FileEntryProps> {
                     <span
                         role="button"
                         className="btnx hint--left hint--rounded hint--bounce"
-                        aria-label="Compare file with current workspace"
+                        aria-label="将文件与当前工作区进行比较"
                     >
                         <a
                             role="button"
@@ -113,7 +113,7 @@ export class FileEntry extends React.Component<FileEntryProps> {
                     <span
                         role="button"
                         className="btnx hint--left hint--rounded hint--bounce"
-                        aria-label="Compare file with previous commit"
+                        aria-label="将文件与以前的提交进行比较"
                     >
                         <a
                             role="button"
@@ -125,7 +125,7 @@ export class FileEntry extends React.Component<FileEntryProps> {
                     <span
                         role="button"
                         className="btnx hint--left hint--rounded hint--bounce"
-                        aria-label="View file history"
+                        aria-label="查看文件历史"
                     >
                         <a role="button" onClick={() => this.props.onAction(this.props.committedFile, 'history')}>
                             <GoHistory></GoHistory> History

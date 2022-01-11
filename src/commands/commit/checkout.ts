@@ -6,7 +6,7 @@ export class CheckoutCommand extends BaseCommitCommand {
     constructor(commit: CommitDetails, private handler: IGitCheckoutCommandHandler) {
         super(commit);
         // const committer = `${commit.logEntry.author!.name} <${commit.logEntry.author!.email}> on ${commit.logEntry.author!.date!.toLocaleString()}`;
-        this.setTitle(`$(git-pull-request) Checkout (${commit.logEntry.hash.short}) commit`);
+        this.setTitle(`$(git-pull-request) 切换到此版本 (${commit.logEntry.hash.short})`);
         // this.setDescription(committer);
         // this.setDetail(commit.logEntry.subject);
         this.setCommand('git.commit.checkout');

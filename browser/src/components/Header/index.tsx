@@ -76,7 +76,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 return (
                     <a
                         className="hint--right hint--rounded hint--bounce"
-                        aria-label="Open repository on Github"
+                        aria-label="在Github中打开"
                         href={selectedBranch.remote.replace(/\.git$/, '') + '/tree/' + encodeURI(selectedBranch.name)}
                     >
                         <GoMarkGithub />
@@ -88,7 +88,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     return (
                         <a
                             className="hint--right hint--rounded hint--bounce"
-                            aria-label="Open repository on Bitbucket"
+                            aria-label="在Bitbucket中打开"
                             href={
                                 'https://bitbucket.org/' + m[1] + '/' + m[2] + '/src/' + encodeURI(selectedBranch.name)
                             }
@@ -121,7 +121,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                     className={'textInput'}
                     type="text"
                     value={this.state.searchText}
-                    placeholder="输入关键词并按Enter键进行筛选"
+                    placeholder="输入关键字回车以筛选"
                     onKeyDown={this.handleKeyDown}
                     onChange={this.handleSearchChange}
                 />

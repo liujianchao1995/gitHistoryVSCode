@@ -70,7 +70,7 @@ export class Branch extends React.Component<BranchProps, BranchState> {
         const active = this.props.settings.branchSelection === BranchSelection.All;
         return (
             <MenuItem active={active} eventKey="[ALL]">
-                All branches
+                所有分支
             </MenuItem>
         );
     }

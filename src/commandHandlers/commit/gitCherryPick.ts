@@ -23,7 +23,7 @@ export class GitCherryPickCommandHandler implements IGitCherryPickCommandHandler
             .createGitService(commit.workspaceFolder);
         const currentBranch = gitService.getCurrentBranch();
 
-        const msg = `Cherry pick ${commit.logEntry.hash.short} into ${currentBranch}?`;
+        const msg = `摘取 ${commit.logEntry.hash.short} 到 ${currentBranch}分支?`;
         const yesNo = showPrompt
             ? await this.applicationShell.showQuickPick(['Yes', 'No'], { placeHolder: msg })
             : 'Yes';
