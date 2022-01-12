@@ -339,13 +339,13 @@
                     "type": "boolean",
                     "default": false,
                     "scope": "resource",
-                    "description": "打开Git日志时包括远程分支"
+                    "description": "查看Git日志时包括远程分支"
                 },
                 "gitHistory.showFileHistorySplit": {
                     "type": "boolean",
                     "default": true,
                     "scope": "window",
-                    "description": "当文件处于活动状态时，拆分显示文件的历史记录。"
+                    "description": "当编辑窗口处于活动状态时，并排打开日志窗口。"
                 },
                 "gitHistory.hideCommitViewExplorer": {
                     "type": "boolean",
@@ -357,13 +357,13 @@
                     "type": "boolean",
                     "default": true,
                     "scope": "window",
-                    "description": "是否在编辑器标题菜单栏中显示按钮"
+                    "description": "是否在编辑窗口右上角的操作栏中显示快捷按钮"
                 },
                 "gitHistory.editorTitleButtonOpenRepo": {
                     "type": "boolean",
                     "default": false,
                     "scope": "window",
-                    "description": "按下编辑器标题按钮时，更应该打开存储库（而不是文件）"
+                    "description": "按下编辑窗口的快捷按钮时，查看整个项目提交历史（而不是当前文件的提交历史）"
                 },
                 "gitHistory.pageSize": {
                     "type": "number",
@@ -381,7 +381,7 @@
                     "type": "boolean",
                     "default": false,
                     "scope": "application",
-                    "description": "在并列视图中显示提交详细信息"
+                    "description": "并排显示日志详情信息"
                 },
                 "gitHistory.logLevel": {
                     "type": "string",
@@ -401,11 +401,11 @@
                         "More Actions"
                     ],
                     "enumDescriptions": [
-                        "Show the 'Git: View History' action on the title of SCM Providers",
-                        "Show the 'Git: View History' action in the 'More Actions...' menu on the title of SCM Providers"
+                        "在标题栏上显示'Git: View History'操作按钮",
+                        "在更多操作中显示'Git: View History'操作选项"
                     ],
                     "default": "Inline",
-                    "description": "指定 'Git: “查看提交历史”操作出现在SCM提供程序的标题上。"
+                    "description": "是否在侧边栏源代码管理窗口中显示'Git: “查看提交历史”快捷按钮。"
                 }
             }
         }
